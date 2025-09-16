@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermo Fisher</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container-wrapper">
+            <div class="container-fluid1">
+                <div class="container1">
+                    <div class="cont1-nav-2">
+                        <div class="cont1-nav-1">
+                            <div class="nav-menu" onclick="showMenu()">
+                                <i class="bi bi-list"></i>
+                            </div>
+                            <div class="nav-logo">
+                                <svg id="Layer_1" data-name="Layer 1" aria-labelledby="logo-alt"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 485.52 223.55">
+                                    <title id="logo-alt">Thermo Fisher Scientific Logo</title>
+                                    <defs>
+                                        <style>
+                                            .tf-logo-cls-1 {
+                                                fill: #E71316;
+                                            }
+
+                                            .tf-logo-cls-2 {
+                                                fill: #fff;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <rect class="tf-logo-cls-1" width="485.52" height="223.55"></rect>
+                                    <path class="tf-logo-cls-2"
+                                        d="M108.27,83.11V76h-32v7.13h11v31h9.92v-31Zm123.5,31c-.26-2.53-.42-4.49-.42-5.81V95.46c0-5.33-3.91-8.65-9.08-8.65a10.21,10.21,0,0,0-8.82,4.69c-1.11-3-4.38-4.54-7.44-4.54-3.7,0-6.81,1.22-8.55,4.54l-.22-4h-9.07V114.1h9.39v-16c0-.84-.37-5.38,4-5.38,2.91,0,3.59,2.59,3.59,5.12V114.1h9.34v-16c0-.84-.37-5.38,4-5.38,2.91,0,3.6,2.59,3.6,5.12V114.1ZM186,95.35V87.28c-4.07,0-7.18,1.27-8.39,5.33l-.22-5.07H168c.21,2.17.21,5.07.21,6.82V114.1h9.4V102.48c0-4.38,1.26-7.07,6.44-7.17.63,0,1.26,0,1.95,0m62-8.54c-8.66,0-14.31,4.8-14.31,13.93,0,9.4,5.71,14.1,14.31,14.1s14.31-4.7,14.31-14.1c0-9.13-5.65-13.93-14.31-13.93m0,5.59c4,0,4.7,4.06,4.7,8.23,0,4.86-.85,8.66-4.7,8.66s-4.7-3.8-4.7-8.66c0-4.22.74-8.28,4.7-8.28ZM137.21,114.1a57.55,57.55,0,0,1-.37-5.81V95.46c0-5.33-4-8.65-9.13-8.65a11.12,11.12,0,0,0-4.44.84,9.58,9.58,0,0,0-3.38,2.69V76H110.5V114.1h9.39v-16c0-.84-.36-5.38,4-5.38,3,0,3.59,2.59,3.59,5.12V114.1Zm28.72-11.46c0-9.55-2.8-15.83-13.41-15.83-8.39,0-13.41,5.17-13.41,13.25,0,9.92,3.54,14.78,13.88,14.78a14.49,14.49,0,0,0,8.24-2.22,9.58,9.58,0,0,0,4.49-7.29h-8.87a4.15,4.15,0,0,1-4.49,4.07c-3.59,0-4.32-3.43-4.27-6.76Zm-9-5.12h-8.71c.21-2.8.84-5.65,4.32-5.8a3.49,3.49,0,0,1,3.33,1.84,7.36,7.36,0,0,1,1.06,4Z">
+                                    </path>
+                                    <path class="tf-logo-cls-2"
+                                        d="M409.29,94.88V86.81c-4.06-.06-7.18,1.26-8.39,5.33l-.21-4.6H391.3c.2,2.17.2,5.07.2,6.81v19.74h9.4V102.48c0-4.38,1.27-7.54,6.44-7.65.63,0,1.26,0,2,0m-48.87,19.21a54.56,54.56,0,0,1-.37-5.8V95.47c0-5.34-4-8.66-9.13-8.66a10.52,10.52,0,0,0-4.33.84,9.73,9.73,0,0,0-3.49,2.69V76h-9.39v38.11h9.39v-16c0-.84-.37-5.38,4-5.38,2.95,0,3.59,2.58,3.59,5.12v16.25Zm-29-7.91c0-4.12-2.16-6.12-5.17-7.23-5.65-2-9.88-2.11-9.88-4.23a2.24,2.24,0,0,1,2.44-2.48,3.34,3.34,0,0,1,2.52.85,3.7,3.7,0,0,1,.69,2.53h8.92c-.21-7-5.7-8.81-11.72-8.81-5.12,0-11.76,1.79-11.76,8.18,0,9.29,15,6.86,15,11.82,0,1.75-1.43,2.53-3.28,2.53a2.92,2.92,0,0,1-2.42-1.26,3.36,3.36,0,0,1-.58-2.59h-9c-.16,7.92,5.7,9.35,12.19,9.35,6.08,0,12-2.22,12-8.66m57.78-3.54c.06-9.55-2.79-15.83-13.41-15.83-8.39,0-13.41,5.17-13.41,13.25,0,9.92,3.54,14.78,13.89,14.78a14.56,14.56,0,0,0,8.23-2.22,9.52,9.52,0,0,0,4.49-7.29H380.1a4.14,4.14,0,0,1-4.48,4.07c-3.59,0-4.33-3.43-4.28-6.76Zm-9-5.12H371.5c.21-2.8.84-5.65,4.33-5.8a3.51,3.51,0,0,1,3.33,1.85,7.38,7.38,0,0,1,1,4Zm-75.39-10h-9.39V114.1h9.39ZM292.5,83l2.22-7H269.47v38.11h9.92v-15h8l2.21-7H279.39V83Zm12.32,0,2.23-7h-9.29l-2.22,7Z">
+                                    </path>
+                                    <path class="tf-logo-cls-2"
+                                        d="M162.45,125.26h3.44v21.61h-3.44Zm232,22c-7.21,0-12.59-4-12.59-11s6-11.42,12.81-11.42a13.4,13.4,0,0,1,6.78,1.9l-1.77,2.09a10.44,10.44,0,0,0-5-1.41,9,9,0,0,0-6.85,2.64,8.89,8.89,0,0,0-2.18,6.33,7.9,7.9,0,0,0,2.56,6.3c1.65,1.63,4.18,2.08,6.66,2.08a12.1,12.1,0,0,0,5.46-1.55l1.68,2a14.64,14.64,0,0,1-7.59,2m-36.24-22h3.44v21.61h-3.44Zm-77.92,2.58h-8.05v19h-3.36v-19h-8v-2.58h19.77ZM100.78,146.1a13.66,13.66,0,0,1-6.09,1.22A20.13,20.13,0,0,1,86,145.37l1.43-2.45a16.3,16.3,0,0,0,7.54,1.82,7.65,7.65,0,0,0,3.93-.88,3.14,3.14,0,0,0,1.9-2.79c0-1.81-1.39-2.93-4.73-3.71l-3.51-.82c-3.5-.82-5.7-3-5.7-5.56,0-3.68,3.62-6.29,8.78-6.29a16.39,16.39,0,0,1,8.29,2.06L102.33,129a13.46,13.46,0,0,0-6.55-1.73c-3.07,0-5.2,1.19-5.2,3.22,0,1.56,1.3,2.49,4.31,3.22l3.25.78a11.33,11.33,0,0,1,4.78,2.18,5.38,5.38,0,0,1,1.68,3.86,6.4,6.4,0,0,1-3.82,5.57m138.41.77-8.58-11.52c-1.61-2.16-4.33-6.38-4.33-6.38s.3,3.65.32,6.85l.09,11.05h-3.43V125.26h4.09L236,137c1.69,2.29,4,5.92,4,5.92s-.52-4-.54-6.84l-.08-10.85h3.4v21.61Zm59.2-21.61h3.45v21.61h-3.45Zm41,2.54H327.56v6.4h10v2.54h-10v10.13h-3.45V125.26h15.76ZM188.17,146.87V125.26H204.1l-.46,2.58h-12v6.44h10.24v2.58h-10.2v7.3h12.86v2.71Zm-52.36.37c-7.2,0-12.58-4-12.58-11s6-11.42,12.8-11.42a13.4,13.4,0,0,1,6.78,1.9l-1.76,2.09a10.44,10.44,0,0,0-5-1.41,9,9,0,0,0-6.86,2.64,8.89,8.89,0,0,0-2.18,6.33,7.9,7.9,0,0,0,2.57,6.3c1.65,1.63,4.17,2.08,6.65,2.08a12.1,12.1,0,0,0,5.46-1.55l1.68,2a14.59,14.59,0,0,1-7.59,2">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="selector" id="selector">
+                            <div class="vanish">
+                                <i class="bi bi-x-lg" id="hide-menu" onclick="hidesearch()"></i>
+                                <h2 class="selector__h2"><span>Search</span> Thermo Fisher Scientific</h2>
+                            </div>
+                            <div class="nav-select">
+                                <select name="Select all" id="">
+                                    <option value="Select All ">Select All</option>
+                                    <option value="Aspire Free ">Aspire Free Products</option>
+                                    <option value="TaqMan Assays ">TaqMan Assays</option>
+                                    <option value="Primary Antidotes ">Primary Antidotes</option>
+                                    <option value="Secondary Antidotes ">Secondary Antidotes</option>
+                                    <option value="ELISA kits ">ELISA kits</option>
+                                    <option value="All Documents & Supports ">All Documents & Supports</option>
+                                    <option value="Certificates ">Certificates</option>
+                                    <option value="SOS ">SOS</option>
+                                    <option value="Manual & Protocols ">Manual & Protocols</option>
+                                    <option value="Product FAQs ">Product FAQs</option>
+                                </select>
+                            </div>
+                            <div class="nav-input">
+                                <input type="text" placeholder="search by catalog, product, name, keyword, application">
+                                <div class="nav-search">
+                                    <i class="bi bi-search"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont1-nav-3">
+                        <ul class="nav-ul">
+                            <li class="nav-li">Order Status</li>
+                            <li class="nav-li">Quick Order</li>
+                            <li class="nav-li sign-in" onclick="signin()">Sign in <i class="bi bi-caret-down-fill">
+                                    <div class="signin" id="signin">
+                                        <div class="signin__block">
+                                            <div class="sigin__block--border">
+                                                <div class="sigin__botton">
+                                                    Sign in
+                                                </div>
+                                                <div class="signin__p">
+                                                    Don't have an account ?<span>Create Account</span>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <ul class="signin__ul">
+                                                    <li>Account</li>
+                                                    <li>Check Order Status</li>
+                                                    <li>Custom Products & Projects</li>
+                                                    <li>Instrument Management</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </i></li>
+                        </ul>
+                    </div>
+                    <div class="cont1-nav-4">
+                        <div class="nav-cart">
+                            <div class="nav-search2 search2__large" onclick="showsearch()">
+                                <i class="bi bi-search"></i>
+                            </div>
+                            <i class="bi bi-cart2"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <i class="bi bi-x-lg" id="hide-menu" onclick="hidemenu()"></i>
+            <div class="hamburger__block">
+                <div class="hamburger__img">
+                    <svg id="Layer_1" data-name="Layer 1" aria-labelledby="logo-alt" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 485.52 223.55">
+                        <title id="logo-alt">Thermo Fisher Scientific Logo</title>
+                        <defs>
+                            <style>
+                                .tf-logo-cls-1 {
+                                    fill: #E71316;
+                                }
+
+                                .tf-logo-cls-2 {
+                                    fill: #fff;
+                                }
+                            </style>
+                        </defs>
+                        <rect class="tf-logo-cls-1" width="485.52" height="223.55"></rect>
+                        <path class="tf-logo-cls-2"
+                            d="M108.27,83.11V76h-32v7.13h11v31h9.92v-31Zm123.5,31c-.26-2.53-.42-4.49-.42-5.81V95.46c0-5.33-3.91-8.65-9.08-8.65a10.21,10.21,0,0,0-8.82,4.69c-1.11-3-4.38-4.54-7.44-4.54-3.7,0-6.81,1.22-8.55,4.54l-.22-4h-9.07V114.1h9.39v-16c0-.84-.37-5.38,4-5.38,2.91,0,3.59,2.59,3.59,5.12V114.1h9.34v-16c0-.84-.37-5.38,4-5.38,2.91,0,3.6,2.59,3.6,5.12V114.1ZM186,95.35V87.28c-4.07,0-7.18,1.27-8.39,5.33l-.22-5.07H168c.21,2.17.21,5.07.21,6.82V114.1h9.4V102.48c0-4.38,1.26-7.07,6.44-7.17.63,0,1.26,0,1.95,0m62-8.54c-8.66,0-14.31,4.8-14.31,13.93,0,9.4,5.71,14.1,14.31,14.1s14.31-4.7,14.31-14.1c0-9.13-5.65-13.93-14.31-13.93m0,5.59c4,0,4.7,4.06,4.7,8.23,0,4.86-.85,8.66-4.7,8.66s-4.7-3.8-4.7-8.66c0-4.22.74-8.28,4.7-8.28ZM137.21,114.1a57.55,57.55,0,0,1-.37-5.81V95.46c0-5.33-4-8.65-9.13-8.65a11.12,11.12,0,0,0-4.44.84,9.58,9.58,0,0,0-3.38,2.69V76H110.5V114.1h9.39v-16c0-.84-.36-5.38,4-5.38,3,0,3.59,2.59,3.59,5.12V114.1Zm28.72-11.46c0-9.55-2.8-15.83-13.41-15.83-8.39,0-13.41,5.17-13.41,13.25,0,9.92,3.54,14.78,13.88,14.78a14.49,14.49,0,0,0,8.24-2.22,9.58,9.58,0,0,0,4.49-7.29h-8.87a4.15,4.15,0,0,1-4.49,4.07c-3.59,0-4.32-3.43-4.27-6.76Zm-9-5.12h-8.71c.21-2.8.84-5.65,4.32-5.8a3.49,3.49,0,0,1,3.33,1.84,7.36,7.36,0,0,1,1.06,4Z">
+                        </path>
+                        <path class="tf-logo-cls-2"
+                            d="M409.29,94.88V86.81c-4.06-.06-7.18,1.26-8.39,5.33l-.21-4.6H391.3c.2,2.17.2,5.07.2,6.81v19.74h9.4V102.48c0-4.38,1.27-7.54,6.44-7.65.63,0,1.26,0,2,0m-48.87,19.21a54.56,54.56,0,0,1-.37-5.8V95.47c0-5.34-4-8.66-9.13-8.66a10.52,10.52,0,0,0-4.33.84,9.73,9.73,0,0,0-3.49,2.69V76h-9.39v38.11h9.39v-16c0-.84-.37-5.38,4-5.38,2.95,0,3.59,2.58,3.59,5.12v16.25Zm-29-7.91c0-4.12-2.16-6.12-5.17-7.23-5.65-2-9.88-2.11-9.88-4.23a2.24,2.24,0,0,1,2.44-2.48,3.34,3.34,0,0,1,2.52.85,3.7,3.7,0,0,1,.69,2.53h8.92c-.21-7-5.7-8.81-11.72-8.81-5.12,0-11.76,1.79-11.76,8.18,0,9.29,15,6.86,15,11.82,0,1.75-1.43,2.53-3.28,2.53a2.92,2.92,0,0,1-2.42-1.26,3.36,3.36,0,0,1-.58-2.59h-9c-.16,7.92,5.7,9.35,12.19,9.35,6.08,0,12-2.22,12-8.66m57.78-3.54c.06-9.55-2.79-15.83-13.41-15.83-8.39,0-13.41,5.17-13.41,13.25,0,9.92,3.54,14.78,13.89,14.78a14.56,14.56,0,0,0,8.23-2.22,9.52,9.52,0,0,0,4.49-7.29H380.1a4.14,4.14,0,0,1-4.48,4.07c-3.59,0-4.33-3.43-4.28-6.76Zm-9-5.12H371.5c.21-2.8.84-5.65,4.33-5.8a3.51,3.51,0,0,1,3.33,1.85,7.38,7.38,0,0,1,1,4Zm-75.39-10h-9.39V114.1h9.39ZM292.5,83l2.22-7H269.47v38.11h9.92v-15h8l2.21-7H279.39V83Zm12.32,0,2.23-7h-9.29l-2.22,7Z">
+                        </path>
+                        <path class="tf-logo-cls-2"
+                            d="M162.45,125.26h3.44v21.61h-3.44Zm232,22c-7.21,0-12.59-4-12.59-11s6-11.42,12.81-11.42a13.4,13.4,0,0,1,6.78,1.9l-1.77,2.09a10.44,10.44,0,0,0-5-1.41,9,9,0,0,0-6.85,2.64,8.89,8.89,0,0,0-2.18,6.33,7.9,7.9,0,0,0,2.56,6.3c1.65,1.63,4.18,2.08,6.66,2.08a12.1,12.1,0,0,0,5.46-1.55l1.68,2a14.64,14.64,0,0,1-7.59,2m-36.24-22h3.44v21.61h-3.44Zm-77.92,2.58h-8.05v19h-3.36v-19h-8v-2.58h19.77ZM100.78,146.1a13.66,13.66,0,0,1-6.09,1.22A20.13,20.13,0,0,1,86,145.37l1.43-2.45a16.3,16.3,0,0,0,7.54,1.82,7.65,7.65,0,0,0,3.93-.88,3.14,3.14,0,0,0,1.9-2.79c0-1.81-1.39-2.93-4.73-3.71l-3.51-.82c-3.5-.82-5.7-3-5.7-5.56,0-3.68,3.62-6.29,8.78-6.29a16.39,16.39,0,0,1,8.29,2.06L102.33,129a13.46,13.46,0,0,0-6.55-1.73c-3.07,0-5.2,1.19-5.2,3.22,0,1.56,1.3,2.49,4.31,3.22l3.25.78a11.33,11.33,0,0,1,4.78,2.18,5.38,5.38,0,0,1,1.68,3.86,6.4,6.4,0,0,1-3.82,5.57m138.41.77-8.58-11.52c-1.61-2.16-4.33-6.38-4.33-6.38s.3,3.65.32,6.85l.09,11.05h-3.43V125.26h4.09L236,137c1.69,2.29,4,5.92,4,5.92s-.52-4-.54-6.84l-.08-10.85h3.4v21.61Zm59.2-21.61h3.45v21.61h-3.45Zm41,2.54H327.56v6.4h10v2.54h-10v10.13h-3.45V125.26h15.76ZM188.17,146.87V125.26H204.1l-.46,2.58h-12v6.44h10.24v2.58h-10.2v7.3h12.86v2.71Zm-52.36.37c-7.2,0-12.58-4-12.58-11s6-11.42,12.8-11.42a13.4,13.4,0,0,1,6.78,1.9l-1.76,2.09a10.44,10.44,0,0,0-5-1.41,9,9,0,0,0-6.86,2.64,8.89,8.89,0,0,0-2.18,6.33,7.9,7.9,0,0,0,2.57,6.3c1.65,1.63,4.17,2.08,6.65,2.08a12.1,12.1,0,0,0,5.46-1.55l1.68,2a14.59,14.59,0,0,1-7.59,2">
+                        </path>
+                    </svg>
+                </div>
+                <div class="hamburgur__ul1">
+                    <li class="hamburger__Bigli">Products</li>
+                    <li class="hamburger__Bigli">Application</li>
+                    <li class="hamburger__Bigli">Services</li>
+                    <li class="hamburger__Bigli">Help and Support </li>
+                    <li class="hamburger__Bigli">Popular</li>
+                </div>
+                <div class="hamburgur__ul2">
+                    <li class="hamburger__smallli">Products</li>
+                    <li class="hamburger__smallli">Application</li>
+                    <li class="hamburger__smallli">Services</li>
+                    <li class="hamburger__smallli">Help and Support </li>
+                    <li class="hamburger__smallli">Popular</li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- SECTION ONE  -->
+    <section class="one">
+        <div class="container-fluid2">
+            <div class="container-wrapper">
+                <div class="container2">
+                    <div class="container2__txt">
+                        <h2 class="container2__h2">3 for 2</h2>
+                        <h3 class="container2__h3">Limited time offer</h3>
+                    </div>
+                    <div class="container2__button">
+                        <button>Save now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mini-one">
+        <div class="container-wrapper">
+            <div class="container-fluid3">
+                <div class="container3">
+                    <div class="cont3">
+                        <div class="mini-cont3">
+                            <h3>MaxSpec FBS consistent performance</h3>
+                            <button class="blue"> Shop now</button>
+                        </div>
+                        <div class="mini3-img">
+                            <img src="/img/keg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="cont3">
+                        <div class="mini-cont3">
+                            <h3>Fast, convenient DNA sample electrophoresis</h3>
+                            <button class="blue"> Start saving</button>
+                        </div>
+                        <div class="mini3-img">
+                            <img src="/img/tablet.png" alt="">
+                        </div>
+                    </div>
+                    <div class="cont3">
+                        <div class="mini-cont3">
+                            <h3>TaqMan Fast Advanced: Efficent, Accurate qPCR</h3>
+                            <button class="blue"> Save now</button>
+                        </div>
+                        <div class="mini3-img">
+                            <img src="/img/drug.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SECTION TWO  -->
+    <section class="two">
+        <div class="container-wrapper2">
+            <div class="container-fluid4">
+                <div class="container4">
+                    <div class="cont4-head">
+                        <h3>Featured Education</h3>
+                        <button class="blue"> See all topics</button>
+                    </div>
+                    <div class="cont4-img">
+                        <div class="cont4-txt">
+                            <h2>Gene therapy learning center</h2>
+                            <p>From innovative solutions to case studies, webinars, and application notes, our extensive
+                                gene therapy resource library can help you accelerate your knowledge and advance your
+                                skills.</p>
+                            <ul>
+                                <li>Explore AAV and lentiviral vector resources</li>
+                                <li>Access CRISPR and gene editing information</li>
+                                <li>Understand dynamic regulatory guidelines and compliance</li>
+                                <li>Discover case studies and clinical applications</li>
+                            </ul>
+                            <button class="button">Learn more</button>
+                            <div class="darkness"></div>
+                        </div>
+                        <div class="cont4-sub">
+                            <h2>Support centers</h2>
+                            <button class="button">View support centers</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container5">
+                    <div class="cont4-head">
+                        <h3>Accelerating Science</h3>
+                        <button class="blue"> View all blog posts</button>
+                    </div>
+                    <div class="cont5-list">
+                        <div class="list5-1">
+                            <div class="list5-img">
+                                <img src="/img/particles.jpg" alt="">
+                            </div>
+                            <div class="list5-txt">
+                                <h3>Guide to Multiplex Immunoassays: Multiplex ELISA and More</h3>
+                                <div class="list5-date">
+                                    <p>09/11/2025</p>
+                                    <button class="button">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list5-1">
+                            <div class="list5-img">
+                                <img src="/img/makeup.png" alt="">
+                            </div>
+                            <div class="list5-txt">
+                                <h3>
+                                    The Future of the Biotech Industry</h3>
+                                <div class="list5-date">
+                                    <p>09/11/2025</p>
+                                    <button class="button">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list5-1">
+                            <div class="list5-img">
+                                <img src="/img/ELISA1-320x200.png" alt="">
+                            </div>
+                            <div class="list5-txt">
+                                <h3>Work Smarter, Review Faster with Chromeleon CDS</h3>
+                                <div class="list5-date">
+                                    <p>09/11/2025</p>
+                                    <button class="button">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- SECTION THREE  -->
+    <section class="three">
+        <div class="container-wrapper2">
+            <div class="container-fluid5">
+                <div class="container6">
+                    <div class="cont6-head">
+                        <h3>Promotions</h3>
+                        <button class="blue">View all promotions</button>
+                    </div>
+                    <div class="sub-cont6">
+                        <div class="mini6">
+                            <div class="mini6-img mini6--img1">
+                                <img sizes="contain" src="/img/flower.png" alt="">
+                                <button class="but1 mini6-but1">Explore now</button>
+                            </div>
+                            <div class="mini6-txt">
+                                <p>For the Love of Innovation! </p>
+                                <button class="blue">Explore now</button>
+                            </div>
+                        </div>
+                        <div class="mini6">
+                            <div class="mini6-img mini6--img2">
+                                <img src="/img/small-logo.png" alt="">
+                                <button class="mini6-but1 but2">EXCLUSIVE DEALS</button>
+                            </div>
+                            <div class="mini6-txt">
+                                <p>Buy 3 products, only pay for 2 for a limited time only</p>
+                                <button class="blue">Save now</button>
+                            </div>
+                        </div>
+                        <div class="mini6">
+                            <div class="mini6-img mini6--img3">
+                                <img src="/img/flower.png" alt="">
+                                <button class="mini6-but1 but3">UP TO 77% OFF</button>
+                            </div>
+                            <div class="mini6-txt">
+                                <p>Save with up to 77% off popular cell culture products</p>
+                                <button class="blue">Save now</button>
+                            </div>
+                        </div>
+                        <div class="mini6">
+                            <div class="mini6-img mini6--img4">
+                                <img src="/img/lady.png" alt="">
+
+                            </div>
+                            <div class="mini6-txt">
+                                <p>Greener by Design</p>
+                                <button class="blue">Make a Change</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SECTION FOUR  -->
+    <section class="four">
+        <div class="container-wrapper2">
+            <div class="container-fluid6">
+                <div class="container7">
+                    <div class="container7__head">
+                        <h3 class="container7__h3">Promotions</h3>
+                        <button class="blue">View all promotions</button>
+                    </div>
+                    <div class="sub-cont7">
+                        <div class="mini7">
+                            <div class="mini6-img mini7--img1 mini7--last1">
+                                <img src="/img/smart.png" alt="">
+
+                            </div>
+                            <div class="mini6-txt">
+                                <p class="mini7__p">Unlock structural insights with the Krios 5 Cryo-TEM</p>
+                                <button class="blue">Learn more</button>
+                            </div>
+                        </div>
+                        <div class="mini7">
+                            <div class="mini6-img mini7--img2 mini7--last1">
+                                <img src="/img/capit.png" alt="">
+
+                            </div>
+                            <div class="mini6-txt ">
+                                <p class="mini7__p">Introducing the Capit-All Flex Automated Decapper</p>
+                                <button class="blue">Request a demo</button>
+                            </div>
+                        </div>
+                        <div class="mini7">
+                            <div class="mini6-img mini7--img3 mini7--last1">
+                                <img src="/img/thermofisher.png" alt="">
+
+                            </div>
+                            <div class="mini6-txt">
+                                <p class="mini7__p">Spin greener: New sustainable floor centrifuges</p>
+                                <button class="blue">Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class="container-wrapper">
+            <div class="container-fluid7">
+                <div class="container8">
+                    <div class="footer">
+                        <div class="footer__block">
+                            <h5 class="footer__h5">Ordering</h5>
+                            <ul class="footer__ul">
+                                <li class="footer__li"><a href="">Order Status</a></li>
+                                <li class="footer__li"><a href="">Order Help</a></li>
+                                <li class="footer__li"><a href="">Quick Order</a></li>
+                                <li class="footer__li"><a href="">Supply Center</a></li>
+                                <li class="footer__li"><a href="">eProcurement</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h5 class="footer__h5">Support</h5>
+                            <ul class="footer__ul">
+                                <li class="footer__li"><a href="">Help and Support</a></li>
+                                <li class="footer__li"><a href="">Contact Us</a></li>
+                                <li class="footer__li"><a href="">Technical Support Centers</a></li>
+                                <li class="footer__li"><a href="">Documents and Certificates</a></li>
+                                <li class="footer__li"><a href="">Report a Site Issue</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h5 class="footer__h5">Resources</h5>
+                            <ul class="footer__ul">
+                                <li class="footer__li"><a href="">Learning Centers</a></li>
+                                <li class="footer__li"><a href="">Promotions</a></li>
+                                <li class="footer__li"><a href="">Events and Webinars</a></li>
+                                <li class="footer__li"><a href="">Social Media</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h5 class="footer__h5">About Thermo Fisher</h5>
+                            <ul class="footer__ul">
+                                <li class="footer__li"><a href="">About Us </a></li>
+                                <li class="footer__li"><a href="">Careers </a></li>
+                                <li class="footer__li"><a href="">Investors </a></li>
+                                <li class="footer__li"><a href="">News </a></li>
+                                <li class="footer__li"><a href="">Social Responsibility </a></li>
+                                <li class="footer__li"><a href="">Trademarks </a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h5 class="footer__h5">Our Portfolio</h5>
+                            <ul class="footer__ul">
+                                <li class="footer__li"><a href="">Thermo Scientific</a></li>
+                                <li class="footer__li"><a href="">Applied Biosystems</a></li>
+                                <li class="footer__li"><a href="">Invitrogen</a></li>
+                                <li class="footer__li"><a href="">Gibco</a></li>
+                                <li class="footer__li"><a href="">Ion Torrent</a></li>
+                                <li class="footer__li"><a href="">Fisher Scientific</a></li>
+                                <li class="footer__li"><a href="">Unity Lab Services</a></li>
+                                <li class="footer__li"><a href="">Patheon</a></li>
+                                <li class="footer__li"><a href="">PPD</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="five">
+        <div class="container-wrapper">
+            <div class="container9">
+                <div class="footer2">
+                    <div class="footer2__block1">
+                        <div class="footer2__img">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 485.52 223.55">
+                                <defs>
+                                    <style>
+                                        .tf-logo-cls-1 {
+                                            fill: #ee3134;
+                                        }
+
+                                        .tf-logo-cls-2 {
+                                            fill: #fff;
+                                        }
+                                    </style>
+                                </defs>
+                                <rect class="tf-logo-cls-1" width="485.52" height="223.55"></rect>
+                                <path class="tf-logo-cls-2"
+                                    d="M108.27,83.11V76h-32v7.13h11v31h9.92v-31Zm123.5,31c-.26-2.53-.42-4.49-.42-5.81V95.46c0-5.33-3.91-8.65-9.08-8.65a10.21,10.21,0,0,0-8.82,4.69c-1.11-3-4.38-4.54-7.44-4.54-3.7,0-6.81,1.22-8.55,4.54l-.22-4h-9.07V114.1h9.39v-16c0-.84-.37-5.38,4-5.38,2.91,0,3.59,2.59,3.59,5.12V114.1h9.34v-16c0-.84-.37-5.38,4-5.38,2.91,0,3.6,2.59,3.6,5.12V114.1ZM186,95.35V87.28c-4.07,0-7.18,1.27-8.39,5.33l-.22-5.07H168c.21,2.17.21,5.07.21,6.82V114.1h9.4V102.48c0-4.38,1.26-7.07,6.44-7.17.63,0,1.26,0,1.95,0m62-8.54c-8.66,0-14.31,4.8-14.31,13.93,0,9.4,5.71,14.1,14.31,14.1s14.31-4.7,14.31-14.1c0-9.13-5.65-13.93-14.31-13.93m0,5.59c4,0,4.7,4.06,4.7,8.23,0,4.86-.85,8.66-4.7,8.66s-4.7-3.8-4.7-8.66c0-4.22.74-8.28,4.7-8.28ZM137.21,114.1a57.55,57.55,0,0,1-.37-5.81V95.46c0-5.33-4-8.65-9.13-8.65a11.12,11.12,0,0,0-4.44.84,9.58,9.58,0,0,0-3.38,2.69V76H110.5V114.1h9.39v-16c0-.84-.36-5.38,4-5.38,3,0,3.59,2.59,3.59,5.12V114.1Zm28.72-11.46c0-9.55-2.8-15.83-13.41-15.83-8.39,0-13.41,5.17-13.41,13.25,0,9.92,3.54,14.78,13.88,14.78a14.49,14.49,0,0,0,8.24-2.22,9.58,9.58,0,0,0,4.49-7.29h-8.87a4.15,4.15,0,0,1-4.49,4.07c-3.59,0-4.32-3.43-4.27-6.76Zm-9-5.12h-8.71c.21-2.8.84-5.65,4.32-5.8a3.49,3.49,0,0,1,3.33,1.84,7.36,7.36,0,0,1,1.06,4Z">
+                                </path>
+                                <path class="tf-logo-cls-2"
+                                    d="M409.29,94.88V86.81c-4.06-.06-7.18,1.26-8.39,5.33l-.21-4.6H391.3c.2,2.17.2,5.07.2,6.81v19.74h9.4V102.48c0-4.38,1.27-7.54,6.44-7.65.63,0,1.26,0,2,0m-48.87,19.21a54.56,54.56,0,0,1-.37-5.8V95.47c0-5.34-4-8.66-9.13-8.66a10.52,10.52,0,0,0-4.33.84,9.73,9.73,0,0,0-3.49,2.69V76h-9.39v38.11h9.39v-16c0-.84-.37-5.38,4-5.38,2.95,0,3.59,2.58,3.59,5.12v16.25Zm-29-7.91c0-4.12-2.16-6.12-5.17-7.23-5.65-2-9.88-2.11-9.88-4.23a2.24,2.24,0,0,1,2.44-2.48,3.34,3.34,0,0,1,2.52.85,3.7,3.7,0,0,1,.69,2.53h8.92c-.21-7-5.7-8.81-11.72-8.81-5.12,0-11.76,1.79-11.76,8.18,0,9.29,15,6.86,15,11.82,0,1.75-1.43,2.53-3.28,2.53a2.92,2.92,0,0,1-2.42-1.26,3.36,3.36,0,0,1-.58-2.59h-9c-.16,7.92,5.7,9.35,12.19,9.35,6.08,0,12-2.22,12-8.66m57.78-3.54c.06-9.55-2.79-15.83-13.41-15.83-8.39,0-13.41,5.17-13.41,13.25,0,9.92,3.54,14.78,13.89,14.78a14.56,14.56,0,0,0,8.23-2.22,9.52,9.52,0,0,0,4.49-7.29H380.1a4.14,4.14,0,0,1-4.48,4.07c-3.59,0-4.33-3.43-4.28-6.76Zm-9-5.12H371.5c.21-2.8.84-5.65,4.33-5.8a3.51,3.51,0,0,1,3.33,1.85,7.38,7.38,0,0,1,1,4Zm-75.39-10h-9.39V114.1h9.39ZM292.5,83l2.22-7H269.47v38.11h9.92v-15h8l2.21-7H279.39V83Zm12.32,0,2.23-7h-9.29l-2.22,7Z">
+                                </path>
+                                <path class="tf-logo-cls-2"
+                                    d="M162.45,125.26h3.44v21.61h-3.44Zm232,22c-7.21,0-12.59-4-12.59-11s6-11.42,12.81-11.42a13.4,13.4,0,0,1,6.78,1.9l-1.77,2.09a10.44,10.44,0,0,0-5-1.41,9,9,0,0,0-6.85,2.64,8.89,8.89,0,0,0-2.18,6.33,7.9,7.9,0,0,0,2.56,6.3c1.65,1.63,4.18,2.08,6.66,2.08a12.1,12.1,0,0,0,5.46-1.55l1.68,2a14.64,14.64,0,0,1-7.59,2m-36.24-22h3.44v21.61h-3.44Zm-77.92,2.58h-8.05v19h-3.36v-19h-8v-2.58h19.77ZM100.78,146.1a13.66,13.66,0,0,1-6.09,1.22A20.13,20.13,0,0,1,86,145.37l1.43-2.45a16.3,16.3,0,0,0,7.54,1.82,7.65,7.65,0,0,0,3.93-.88,3.14,3.14,0,0,0,1.9-2.79c0-1.81-1.39-2.93-4.73-3.71l-3.51-.82c-3.5-.82-5.7-3-5.7-5.56,0-3.68,3.62-6.29,8.78-6.29a16.39,16.39,0,0,1,8.29,2.06L102.33,129a13.46,13.46,0,0,0-6.55-1.73c-3.07,0-5.2,1.19-5.2,3.22,0,1.56,1.3,2.49,4.31,3.22l3.25.78a11.33,11.33,0,0,1,4.78,2.18,5.38,5.38,0,0,1,1.68,3.86,6.4,6.4,0,0,1-3.82,5.57m138.41.77-8.58-11.52c-1.61-2.16-4.33-6.38-4.33-6.38s.3,3.65.32,6.85l.09,11.05h-3.43V125.26h4.09L236,137c1.69,2.29,4,5.92,4,5.92s-.52-4-.54-6.84l-.08-10.85h3.4v21.61Zm59.2-21.61h3.45v21.61h-3.45Zm41,2.54H327.56v6.4h10v2.54h-10v10.13h-3.45V125.26h15.76ZM188.17,146.87V125.26H204.1l-.46,2.58h-12v6.44h10.24v2.58h-10.2v7.3h12.86v2.71Zm-52.36.37c-7.2,0-12.58-4-12.58-11s6-11.42,12.8-11.42a13.4,13.4,0,0,1,6.78,1.9l-1.76,2.09a10.44,10.44,0,0,0-5-1.41,9,9,0,0,0-6.86,2.64,8.89,8.89,0,0,0-2.18,6.33,7.9,7.9,0,0,0,2.57,6.3c1.65,1.63,4.17,2.08,6.65,2.08a12.1,12.1,0,0,0,5.46-1.55l1.68,2a14.59,14.59,0,0,1-7.59,2">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="footer2__txt">
+                            <div class="footer2__flextxt">
+                                <li>Terms & Conditions </li>
+                                <li>Privacy Policy </li>
+                                <li>Price & Freight Policy </li>
+                                <li>Cookie Preferences </li>
+                            </div>
+                            <p class="footer2__normaltxt">
+                                © 2006-2025 Thermo Fisher Scientific Inc. All rights reserved. All trademarks are the
+                                property of Thermo Fisher Scientific and its subsidiaries unless otherwise specified.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer2__block2">
+                        <div class="footer2__flexitem">
+                            <img class="footer2__img" src="/img/ng.webp" alt="">
+                            <p class="footer2__p">Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
